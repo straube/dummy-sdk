@@ -109,3 +109,5 @@ To run the tests you may set some environment vars. This way:
     $ DUMMY_USER=username \
         DUMMY_PASSWORD=*** \
         vendor/bin/phpunit
+
+Since we're using a Github hosted file to emulate the API response, you may set those vars with your Github credentials.
