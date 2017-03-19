@@ -18,7 +18,7 @@ class Client
      *
      * @var string
      */
-    const BASE_URI = '';
+    const BASE_URI = 'https://raw.githubusercontent.com/straube/dummy-sdk/master/assets/api/';
 
     /**
      * The HTTP client instance.
@@ -35,8 +35,8 @@ class Client
      * be stored inside the class, neither be manually passed to all API 
      * requests.
      *
-     * @param string $user The API user.
-     * @param string $password The API password.
+     * @param string $username The API user username.
+     * @param string $password The API user password.
      */
     public function __construct($username, $password)
     {
@@ -46,7 +46,7 @@ class Client
                 'Accept' => 'application/json',
             ],
             'auth' => [
-                $user,
+                $username,
                 $password,
             ],
         ]);
